@@ -438,7 +438,7 @@ def main():
 
     if model_args.freeze_weights:
         logger.info("Freezing encoder weights")
-        for i in range(6-8):
+        for i in range(1-3):
             freeze_model_weights(model.encoder.block[i])
 
     # We resize the embeddings only when necessary to avoid index errors. If you are creating a model from scratch
